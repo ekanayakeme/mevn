@@ -265,7 +265,7 @@ function loadSection(section) {
     <p>Drugs can have a wide range of effects on the body and mind, often leading to severe physical and psychological consequences. Physically, drug abuse can cause damage to vital organs such as the heart, liver, and brain, leading to conditions like heart disease, liver failure, and neurological disorders. Mentally, drug use can impair cognitive functions, alter mood, and exacerbate or trigger mental health issues such as anxiety, depression, and psychosis. Long-term use can result in dependency and addiction, making it difficult for individuals to function without the substance and disrupting their personal, social, and professional lives. Moreover, the societal impact includes increased healthcare costs, loss of productivity, and the strain on law enforcement and social services.</p>
     
     <h3>Before Drug Use</h3>
-    <img src="OIP (4).jpg" alt="Before Drug Use" class="effect-image">
+    <img src="OIP(4).jpg" alt="Before Drug Use" class="effect-image">
     
     <h3>After Drug Use</h3>
     <img src="D:/Mevan/website m/images/SMOSH_beforeandafter.jpeg" alt="After Drug Use" class="effect-image">
