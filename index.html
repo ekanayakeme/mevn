@@ -23,6 +23,26 @@
             max-height: 80%;
             overflow: auto;
         }
+
+        /* Styling for the piano tiles game */
+        .game-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 10px;
+            margin-top: 20px;
+        }
+
+        .tile {
+            width: 100px;
+            height: 100px;
+            background-color: lightgray;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .tile.active {
+            background-color: black;
+        }
     </style>
 </head>
 <body>
@@ -61,19 +81,25 @@
             <label for="email">Email Address:</label><br>
             <input type="email" id="email" name="email" required><br><br>
 
-            <!-- Add more fields as needed -->
-
             <input type="submit" value="Submit">
         </form>
     </div>
      <!-- Welcome popup -->
      <div id="welcome-popup" class="popup">
-        <h2>Welcome</h2>
+        <h2>Welcome. click the black boxes</h2>
         <p id="welcome-message"></p>
         <button onclick="closeWelcomePopup()">OK</button>
+
+        <!-- Piano Tiles Game -->
+        <div id="piano-game" class="game-container">
+            <div class="tile" data-index="0"></div>
+            <div class="tile" data-index="1"></div>
+            <div class="tile" data-index="2"></div>
+            <div class="tile" data-index="3"></div>
+        </div>
     </div>
 
-    <!-- JavaScript to show form popup on page load -->
+    <!-- JavaScript to handle the game and popup behavior -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             // Show the form popup
@@ -97,6 +123,9 @@
 
             // Close the form popup (optional)
             document.getElementById('popup-form').style.display = 'none';
+
+            // Start the piano tiles game
+            startPianoTilesGame();
         });
 
         // Function to show welcome popup
@@ -113,6 +142,42 @@
             // Hide the welcome popup
             document.getElementById('welcome-popup').style.display = 'none';
         }
+
+        // Piano Tiles Game Logic
+        function startPianoTilesGame() {
+            const tiles = document.querySelectorAll('.tile');
+            let activeTileIndex = Math.floor(Math.random() * tiles.length);
+            let correctClicks = 0;
+            const maxCorrectClicks = 5;
+
+            // Activate a random tile
+            tiles[activeTileIndex].classList.add('active');
+
+            tiles.forEach(tile => {
+                tile.addEventListener('click', function() {
+                    if (tile.classList.contains('active')) {
+                        correctClicks++;
+                        tile.classList.remove('active');
+
+                        if (correctClicks >= maxCorrectClicks) {
+                            closeTab();
+                        } else {
+                            // Activate the next random tile
+                            activeTileIndex = Math.floor(Math.random() * tiles.length);
+                            tiles[activeTileIndex].classList.add('active');
+                        }
+                    }
+                });
+            });
+        }
+
+        // Function to close the current tab after the game is completed
+        function closeTab() {
+    alert('Congratulations! You completed the game.');
+    // Optionally, redirect to another page
+    // window.location.href = 'another-page.html';
+}
+        
     </script>
 </body>
 </html>
