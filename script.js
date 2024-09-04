@@ -104,7 +104,7 @@ function loadSection(section) {
         Your browser does not support the video tag.
     </video>
                         <h3>Cocaine</h3>
-                        <img src="D:/Mevan/website m/images/download.jpg" alt="Cocaine">
+                        <img src="https://www.google.com/imgres?q=drugs&imgurl=https%3A%2F%2Fdelamere.com%2Fwp-content%2Fuploads%2F2022%2F02%2FPicture1-1024x683.jpg&imgrefurl=https%3A%2F%2Fdelamere.com%2Fblog%2Ftop-10-most-dangerous-drugs&docid=YSg-G7AluOFW9M&tbnid=jWIMGiYD_o5Y9M&vet=12ahUKEwjkvJSkzKiIAxW6cvUHHdV0NskQM3oECBAQAA..i&w=1024&h=683&hcb=2&ved=2ahUKEwjkvJSkzKiIAxW6cvUHHdV0NskQM3oECBAQAA" alt="Cocaine">
                         <p>Cocaine is a powerful stimulant drug derived from the leaves of the coca plant, native to South America. Known for its intense euphoric effects, cocaine has a storied history and significant impact on societies worldwide. Despite its illegal status and severe health risks, it remains one of the most widely used illicit drugs.</p>
                         <p><strong>Historical Context</strong></p>
                         <p>The coca plant has been used for thousands of years by indigenous peoples in the Andes Mountains. Chewing coca leaves was a common practice for its stimulating effects, helping to alleviate fatigue and hunger, especially at high altitudes.</p>
