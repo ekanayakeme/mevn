@@ -19,7 +19,7 @@ function loadSection(section) {
         <section id="introduction" class="introduction">
     <h2>Introduction</h2>
     <p>Drug education aims to provide knowledge and understanding about drugs and their effects on health and society.</p>
-    <img src="D:/Mevan/website m/images/OIP.jpg" alt="Introduction to Drugs" class="intro-image">
+    <img src="images/6667.jpeg" alt="Introduction to Drugs" class="intro-image">
     <p>
         <!-- Start of extended content -->
         Drugs, both legal and illegal, have been a part of human history for centuries. While some drugs have medicinal benefits, others can be harmful and addictive. Understanding drugs involves learning about their classifications, effects, and potential risks.
